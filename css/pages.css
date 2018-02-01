@@ -39,6 +39,11 @@ a {
     text-decoration: none;
     color: #999;
 }
+
+a.link {
+    text-decoration: none;
+    color: #1ab2ff;
+}
 a:hover {
     text-decoration: underline;
 }
