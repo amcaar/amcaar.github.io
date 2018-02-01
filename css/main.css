@@ -3,7 +3,8 @@ body {
     width: 70%;
 
   /* Location of the image */
-  background-image: url(https://cdnb.artstation.com/p/assets/images/images/000/973/587/large/tim-barton-sunset-nebula-1600.jpg?1437337636);
+  /*background-image: url(https://cdnb.artstation.com/p/assets/images/images/000/973/587/large/tim-barton-sunset-nebula-1600.jpg?1437337636);*/
+    background-image: url(http://www.bestfon.info/images/joomgallery/originals/tecnologa_15/teclado_con_luz_20130309_1436451191.jpg);
   
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
