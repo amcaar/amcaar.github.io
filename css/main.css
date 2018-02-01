@@ -38,6 +38,12 @@ ul.posts {
     font-size: 1.5em;
 }
 
+img.avatar { margin-bottom: 30px; }
+
+.img-circle {
+  border-radius: 50%;
+}
+
 ul.posts li {
     list-style: none;
 }
