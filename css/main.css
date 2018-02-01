@@ -46,12 +46,20 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 2;
     line-height: 1.4em;
     color: #ffffff;
     text-align: center;
 }
 h1 {
+    text-align: center;
+    color: #ffffff;
+}
+h2 {
+    text-align: center;
+    color: #ffffff;
+}
+h3 {
     text-align: center;
     color: #ffffff;
 }
@@ -70,7 +78,7 @@ img.avatar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 15%;
 }
 
 .img-circle {
