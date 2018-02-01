@@ -67,7 +67,7 @@ ul.posts {
 
 img.avatar { 
     margin-bottom: 30px; 
-    text-align: center;
+    align: middle;
 }
 
 .img-circle {
