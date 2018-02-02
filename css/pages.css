@@ -74,8 +74,16 @@ ul.posts {
     font-size: 1.5em;
 }
 
-img.avatar { margin-bottom: 30px; }
+img.avatar { 
+    margin-bottom: 30px; 
+}
 
+img.float{
+    width:100%;
+    height:auto;  
+    float: right;
+    margin-left:15px;
+}
 .img-circle {
   border-radius: 50%;
 }
