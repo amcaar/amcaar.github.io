@@ -3,7 +3,8 @@ body {
     width: 70%;
     
   /* Location of the image */
-  background-image: url(https://hdwallsource.com/img/2016/5/crumpled-paper-texture-wallpaper-49223-50885-hd-wallpapers.jpg);
+  /*background-image: url(https://hdwallsource.com/img/2016/5/crumpled-paper-texture-wallpaper-49223-50885-hd-wallpapers.jpg);*/
+  background-image: url(/img/paper_back.jpg);
     
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
