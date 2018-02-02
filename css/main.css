@@ -4,7 +4,8 @@ body {
 
   /* Location of the image */
   /*background-image: url(https://cdnb.artstation.com/p/assets/images/images/000/973/587/large/tim-barton-sunset-nebula-1600.jpg?1437337636);*/
-  background-image: url(https://hdwallsource.com/img/2016/7/keyboard-glow-wallpaper-50586-52278-hd-wallpapers.jpg);
+  /*background-image: url(https://hdwallsource.com/img/2016/7/keyboard-glow-wallpaper-50586-52278-hd-wallpapers.jpg);*/
+  background-image: url(/img/keyboard_back.jpg);
     
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
