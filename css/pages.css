@@ -89,15 +89,13 @@ ul.posts li {
 }
 #content {
   float: left;
-  width: 100%;
-  background-color: #CCF;
+  width: 80%;
+
 }
 #sidebar {
   float: right;
-  width: 200px;
+  width: 20%;
   margin-right: -200px;
-  background-color: #FFA;
+
 }
-#cleared {
-  clear: both;
-}
+
