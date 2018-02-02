@@ -88,3 +88,7 @@ img.avatar {
 ul.posts li {
     list-style: none;
 }
+
+div.blurb{
+    margin-top: 100px;
+}
