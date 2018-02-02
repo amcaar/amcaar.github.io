@@ -85,17 +85,13 @@ ul.posts li {
 }
 
 #wrapper {
-  margin-right: 200px;
 }
 #content {
   float: left;
   width: 80%;
-
 }
 #sidebar {
   float: right;
   width: 20%;
-  margin-right: -200px;
-
 }
 
