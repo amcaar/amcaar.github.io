@@ -1,6 +1,7 @@
 name: Amanda Calatrava
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+description: "Amanda Calatrava - Investigadora en Cloud, Serverless e IA en la UPV"
 
 gems:
   - jekyll-sitemap
