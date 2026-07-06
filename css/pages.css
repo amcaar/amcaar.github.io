@@ -1,97 +1,360 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-    
-  /* Location of the image */
-  /*background-image: url(https://hdwallsource.com/img/2016/5/crumpled-paper-texture-wallpaper-49223-50885-hd-wallpapers.jpg);*/
-  background-image: url(/img/paper_back.jpg);
-    
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
+/* ============================
+   Variables de tema
+   ============================ */
+:root {
+	--color-bg: #FAF9F7;
+	--color-surface: #FFFFFF;
+	--color-text: #2C2C2A;
+	--color-text-secondary: #5F5E5A;
+	--color-border: #E5E2DA;
+	--color-accent: #D85A30;
+	--color-accent-bg: #F5C4B3;
+	--color-accent-text: #4A1B0C;
+	--color-link: #5F5E5A;
+}
 
-  /* Set a background color that will be displayed
-     while the background image is loading */
-    /*background-color: #f7e6ff;*/
-    background-color: #ffffff;
+[data-theme="dark"] {
+	--color-bg: #1A1816;
+	--color-surface: #232019;
+	--color-text: #F1EFE8;
+	--color-text-secondary: #B4B2A9;
+	--color-border: #3A362E;
+	--color-accent: #E77552;
+	--color-accent-bg: #712B13;
+	--color-accent-text: #F5C4B3;
+	--color-link: #B4B2A9;
+}
+
+/* ============================
+   Base
+   ============================ */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	padding: 60px 24px;
+	max-width: 760px;
+	width: 100%;
+	font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
+	background-color: var(--color-bg);
+	color: var(--color-text);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 32px 20px;
+	}
+}
+
+/* ============================
+   Navegación
+   ============================ */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 48px;
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
+	font-family: 'Inter', sans-serif;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: 500;
 }
+
 nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
+	display: inline;
+	margin-right: 20px;
 }
+
+nav ul li a {
+	color: var(--color-text);
+}
+
+nav ul li a:hover {
+	color: var(--color-accent);
+}
+
+#theme-toggle {
+	border: 1px solid var(--color-border);
+	background: var(--color-surface);
+	color: var(--color-text);
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#theme-toggle:hover {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+}
+
+/* ============================
+   Tipografía y enlaces
+   ============================ */
 a {
-    text-decoration: none;
-    color: #999;
+	text-decoration: none;
+	color: var(--color-link);
 }
 
 a.link {
-    text-decoration: none;
-    color: #e62e00;
+	color: var(--color-accent);
 }
+
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
+
+h1, h2, h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	line-height: 1.25;
+}
+
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+	font-size: 2.4em;
+	margin-bottom: 0.3em;
 }
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+	font-size: 1.1em;
+	line-height: 1.7;
+	color: var(--color-text-secondary);
 }
 
 ul.contact {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+	font-size: 1.1em;
+	line-height: 1.7;
+	color: var(--color-text-secondary);
 }
 
+/* ============================
+   Etiquetas / badges (redes, tags)
+   ============================ */
+.badge {
+	display: inline-block;
+	background: var(--color-accent-bg);
+	color: var(--color-accent-text);
+	font-size: 0.8em;
+	font-weight: 500;
+	padding: 3px 12px;
+	border-radius: 20px;
+	margin-right: 8px;
+}
+
+/* ============================
+   Hero (portada / home)
+   ============================ */
+.blurb {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin-bottom: 20px;
+}
+
+.blurb img.avatar {
+	width: 160px;
+	height: 160px;
+	object-fit: cover;
+	flex-shrink: 0;
+	margin-bottom: 0;
+}
+
+.blurb h2 {
+	margin-top: 0;
+}
+
+@media (max-width: 600px) {
+	.blurb {
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.blurb img.avatar {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+/* ============================
+   Página About
+   ============================ */
+.about p.justify {
+	text-align: justify;
+}
+
+.about h2 {
+	margin-top: 40px;
+}
+
+.about img.full-width {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin-top: 12px;
+}
+
+.footicons {
+	margin: 16px 0 30px;
+}
+
+/* ============================
+   Página Publications (CV)
+   ============================ */
+.publications h2 {
+	margin-top: 56px;
+	padding-top: 8px;
+	border-top: 1px solid var(--color-border);
+}
+
+.publications h2:first-of-type {
+	border-top: none;
+	margin-top: 24px;
+}
+
+.publications h3 {
+	color: var(--color-text-secondary);
+	font-size: 1.05em;
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+.publications p {
+	font-size: 1em;
+	line-height: 1.65;
+	padding-left: 1.4em;
+	text-indent: -1.4em;
+	margin: 0 0 14px;
+}
+
+.publications hr {
+	display: none;
+}
+
+.cv-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.cv-nav a {
+	font-size: 0.85em;
+	font-weight: 500;
+	padding: 5px 12px;
+	border: 1px solid var(--color-border);
+	border-radius: 20px;
+	color: var(--color-text-secondary);
+}
+
+.cv-nav a:hover {
+	border-color: var(--color-accent);
+	color: var(--color-accent);
+	text-decoration: none;
+}
+
+/* ============================
+   Página Contact
+   ============================ */
+.contact address {
+	font-style: normal;
+	line-height: 1.8;
+	font-size: 1.05em;
+}
+
+.contact address img.float {
+	width: 25%;
+}
+
+.map-embed {
+	position: relative;
+	width: 100%;
+	padding-top: 65%;
+	margin: 24px 0 30px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.map-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* ============================
+   Footer
+   ============================ */
 footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
-
-img.avatar { 
-    margin-bottom: 30px; 
-}
-
-img.float{
-    width:25%;
-    height:auto;  
-    float: right;
-    margin-left:30px;
-}
-.img-circle {
-  border-radius: 50%;
-}
-
-ul.posts li {
-    list-style: none;
+	border-top: 1px solid var(--color-border);
+	font-size: 0.85em;
+	margin-top: 60px;
+	padding-top: 20px;
+	color: var(--color-text-secondary);
 }
 
 div.footicons {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+/* ============================
+   Listado de posts (por si se usa en el futuro)
+   ============================ */
+ul.posts {
+	margin: 20px auto 40px;
+	font-size: 1.1em;
+}
+
+ul.posts li {
+	list-style: none;
+}
+
+/* ============================
+   Imágenes
+   ============================ */
+img.avatar {
+	margin-bottom: 30px;
+}
+
+img.float {
+	width: 30%;
+	height: auto;
+	float: right;
+	margin-left: 30px;
+	border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+	img.float {
+		width: 100%;
+		float: none;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.img-circle {
+	border-radius: 50%;
 }
