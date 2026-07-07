@@ -166,7 +166,7 @@ ul.contact {
    ============================ */
 .blurb {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	gap: 40px;
 	margin-bottom: 20px;
 }
@@ -191,27 +191,51 @@ ul.contact {
 	}
 
 	.blurb img.avatar {
-		width: 120px;
-		height: 120px;
+		width: 180px;
+		height: 180px;
 	}
 }
 
 /* ============================
-   Página About
+   Afiliaciones (portada)
    ============================ */
-.about p.justify {
-	text-align: justify;
+.affiliations {
+	margin: 12px 0 40px;
+	padding-top: 24px;
+	border-top: 1px solid var(--color-border);
 }
 
-.about h2 {
-	margin-top: 40px;
+.affiliation-logos {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
 }
 
-.about img.full-width {
-	width: 100%;
-	height: auto;
+.affiliation-logos a {
+	display: inline-flex;
+	align-items: center;
+	background: #ffffff;
+	border: 1px solid var(--color-border);
 	border-radius: 8px;
-	margin-top: 12px;
+	padding: 10px 18px;
+	transition: border-color 0.15s ease;
+}
+
+.affiliation-logos a:hover {
+	border-color: var(--color-accent);
+}
+
+.affiliation-logos img {
+	height: 40px;
+	width: auto;
+	display: block;
+}
+
+@media (max-width: 600px) {
+	.affiliation-logos {
+		justify-content: center;
+	}
 }
 
 .footicons {
