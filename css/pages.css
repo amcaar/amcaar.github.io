@@ -344,6 +344,14 @@ ul.contact {
 	font-size: 1.05em;
 }
 
+.address-block {
+	margin-bottom: 32px;
+}
+
+.address-block h3 {
+	margin-bottom: 6px;
+}
+
 .contact address img.float {
 	width: 25%;
 }
