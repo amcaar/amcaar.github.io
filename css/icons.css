@@ -7,10 +7,10 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 12px;
+	width: 42px;
+	height: 42px;
 	font-size: 18px;
-	width: 18px;
-	height: 18px;
+	line-height: 1;
 	text-align: center;
 	text-decoration: none;
 	margin: 4px 4px 4px 0;
@@ -81,6 +81,12 @@
 	background: #ff9933;
 	color: white;
 }
+
+.social-icon.fa-search-plus {
+	background: #00CCBB;
+	color: white;
+}
+
 
 .social-icon.fa-search-plus {
 	background: #00CCBB;
