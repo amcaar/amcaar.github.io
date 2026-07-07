@@ -7,8 +7,8 @@
 	display: inline-block;
 	width: 42px;
 	height: 42px;
-	line-height: 42px;
-	font-size: 18px;
+	line-height: 42px !important;
+	font-size: 18px !important;
 	text-align: center;
 	text-decoration: none;
 	margin: 4px 4px 4px 0;
