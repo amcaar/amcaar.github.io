@@ -239,6 +239,44 @@ ul.contact {
 	margin-bottom: 10px;
 }
 
+.cv-year {
+	margin-top: 18px;
+}
+
+.cv-year summary {
+	cursor: pointer;
+	list-style: none;
+	color: var(--color-text-secondary);
+	font-size: 1.05em;
+	font-weight: 500;
+	padding: 4px 0;
+}
+
+.cv-year summary::-webkit-details-marker {
+	display: none;
+}
+
+.cv-year summary::before {
+	content: "▸";
+	display: inline-block;
+	width: 1em;
+	margin-right: 6px;
+	color: var(--color-accent);
+	transition: transform 0.15s ease;
+}
+
+.cv-year[open] summary::before {
+	transform: rotate(90deg);
+}
+
+.cv-year summary:hover {
+	color: var(--color-accent);
+}
+
+.cv-year p {
+	margin-top: 14px;
+}
+
 .publications p {
 	font-size: 1em;
 	line-height: 1.65;
