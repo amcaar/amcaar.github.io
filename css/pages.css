@@ -250,13 +250,18 @@ ul.contact {
 }
 
 .logo-row img {
-	height: 60px;
+	height: 90px;
 	width: auto;
 	background: #ffffff;
 	border: 1px solid var(--color-border);
-	border-radius: 8px;
+	border-radius: 10px;
 	padding: 10px 16px;
 	box-sizing: content-box;
+}
+
+.logo-row img.flush {
+	background: none;
+	padding: 0;
 }
 
 @media (max-width: 600px) {
