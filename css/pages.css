@@ -501,6 +501,14 @@ ul.contact {
 	vertical-align: middle;
 }
 
+.research-list p {
+	font-size: 1em;
+	line-height: 1.65;
+	padding-left: 1.4em;
+	text-indent: -1.4em;
+	margin: 0 0 16px;
+}
+
 /* ============================
    Footer
    ============================ */
