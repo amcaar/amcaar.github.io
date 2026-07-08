@@ -186,6 +186,7 @@ ul.contact {
 @media (max-width: 600px) {
 	.blurb {
 		flex-direction: column;
+		align-items: center;
 		text-align: center;
 		gap: 20px;
 	}
