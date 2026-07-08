@@ -183,6 +183,10 @@ ul.contact {
 	margin-top: 0;
 }
 
+.blurb p {
+	text-align: justify;
+}
+
 @media (max-width: 600px) {
 	.blurb {
 		flex-direction: column;
@@ -209,8 +213,9 @@ ul.contact {
 .affiliation-logos {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
-	gap: 20px;
+	gap: 24px;
 }
 
 .affiliation-logos a {
@@ -228,7 +233,7 @@ ul.contact {
 }
 
 .affiliation-logos img {
-	height: 40px;
+	height: 54px;
 	width: auto;
 	display: block;
 }
