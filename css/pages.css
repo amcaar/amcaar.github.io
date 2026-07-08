@@ -35,7 +35,7 @@
 body {
 	margin: 0 auto;
 	padding: 60px 24px;
-	max-width: 1000px;
+	max-width: 1100px;
 	width: 100%;
 	font-family: 'Inter', 'Helvetica', 'Arial', sans-serif;
 	background-color: var(--color-bg);
@@ -136,8 +136,8 @@ h3 {
 }
 
 p {
-	font-size: 1.1em;
-	line-height: 1.7;
+	font-size: 1.02em;
+	line-height: 1.6;
 	color: var(--color-text-secondary);
 }
 
@@ -167,8 +167,8 @@ ul.contact {
 .blurb {
 	display: flex;
 	align-items: flex-start;
-	gap: 40px;
-	margin-bottom: 20px;
+	gap: 32px;
+	margin-bottom: 12px;
 }
 
 .blurb img.avatar {
@@ -201,8 +201,8 @@ ul.contact {
    Afiliaciones (portada)
    ============================ */
 .affiliations {
-	margin: 12px 0 40px;
-	padding-top: 24px;
+	margin: 8px 0 28px;
+	padding-top: 18px;
 	border-top: 1px solid var(--color-border);
 }
 
