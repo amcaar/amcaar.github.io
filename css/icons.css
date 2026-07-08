@@ -40,9 +40,10 @@
 	color: white;
 }
 
-.social-icon.fa-google {
-	background: #dd4b39;
-	color: white;
+.social-icon.ai-google-scholar,
+.social-icon.ai-google-scholar:before {
+	background: #dd4b39 !important;
+	color: white !important;
 }
 
 .social-icon.fa-linkedin {
@@ -75,9 +76,10 @@
 	color: white;
 }
 
-.social-icon.fa-search-plus {
-	background: #00CCBB;
-	color: white;
+.social-icon.ai-researchgate,
+.social-icon.ai-researchgate:before {
+	background: #00CCBB !important;
+	color: white !important;
 }
 
 .social-icon.ai-scopus,
