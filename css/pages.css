@@ -294,24 +294,20 @@ ul.contact {
 	margin-top: 24px;
 }
 
-.publications h3 {
-	color: var(--color-text-secondary);
-	font-size: 1.05em;
-	margin-top: 28px;
-	margin-bottom: 10px;
-}
-
 .cv-year {
-	margin-top: 18px;
+	background: var(--color-surface);
+	border: 1px solid var(--color-border);
+	border-radius: 10px;
+	padding: 18px 24px;
+	margin-bottom: 16px;
 }
 
 .cv-year summary {
 	cursor: pointer;
 	list-style: none;
-	color: var(--color-text-secondary);
-	font-size: 1.05em;
+	color: var(--color-text);
+	font-size: 1.1em;
 	font-weight: 500;
-	padding: 4px 0;
 }
 
 .cv-year summary::-webkit-details-marker {
