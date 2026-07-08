@@ -75,12 +75,19 @@
 	color: white;
 }
 
-.social-icon.fa-briefcase {
-	background: #ff9933;
-	color: white;
-}
-
 .social-icon.fa-search-plus {
 	background: #00CCBB;
 	color: white;
+}
+
+.social-icon.ai-scopus,
+.social-icon.ai-scopus:before {
+	background: #E9711C !important;
+	color: white !important;
+}
+
+.social-icon.ai-clarivate,
+.social-icon.ai-clarivate:before {
+	background: #6A1B9A !important;
+	color: white !important;
 }
