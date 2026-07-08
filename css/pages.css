@@ -343,6 +343,12 @@ ul.contact {
 	margin: 0 0 14px;
 }
 
+.publications p::before {
+	content: "• ";
+	color: var(--color-accent);
+	font-weight: 700;
+}
+
 .publications hr {
 	display: none;
 }
@@ -541,6 +547,12 @@ ul.contact {
 	padding-left: 1.4em;
 	text-indent: -1.4em;
 	margin: 0 0 16px;
+}
+
+.research-list p::before {
+	content: "• ";
+	color: var(--color-accent);
+	font-weight: 700;
 }
 
 /* ============================
