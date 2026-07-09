@@ -331,6 +331,23 @@ ul.contact {
 	color: var(--color-accent);
 }
 
+.cv-year summary.has-logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.cv-year summary.has-logo .summary-text {
+	flex: 1;
+}
+
+.cv-year summary img.school-logo {
+	height: 36px;
+	width: auto;
+	border-radius: 6px;
+	flex-shrink: 0;
+}
+
 .cv-year p {
 	margin-top: 14px;
 }
