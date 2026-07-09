@@ -335,15 +335,15 @@ ul.contact {
 	margin-top: 14px;
 }
 
-.publications p {
+.publications .cv-year p {
 	font-size: 1em;
 	line-height: 1.65;
 	padding-left: 1.4em;
 	text-indent: -1.4em;
-	margin: 0 0 14px;
+	margin: 14px 0;
 }
 
-.publications p::before {
+.publications .cv-year p::before {
 	content: "• ";
 	color: var(--color-accent);
 	font-weight: 700;
