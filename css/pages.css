@@ -464,10 +464,35 @@ ul.contact {
 	flex-wrap: wrap;
 	gap: 10px;
 	margin-bottom: 14px;
+	cursor: pointer;
+	list-style: none;
+}
+
+.year-card-header::-webkit-details-marker {
+	display: none;
 }
 
 .year-card-header h3 {
 	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.year-card-header h3::before {
+	content: "▸";
+	display: inline-block;
+	width: 1em;
+	margin-right: 6px;
+	color: var(--color-accent);
+	transition: transform 0.15s ease;
+}
+
+.year-card[open] .year-card-header h3::before {
+	transform: rotate(90deg);
+}
+
+.year-card-header:hover h3 {
+	color: var(--color-accent);
 }
 
 .role-badge {
