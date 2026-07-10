@@ -632,7 +632,6 @@ ul.contact {
 	height: 40px;
 	width: auto;
 	background: #ffffff;
-	border: 1px solid var(--color-border);
 	border-radius: 6px;
 	padding: 6px 10px;
 	box-sizing: content-box;
