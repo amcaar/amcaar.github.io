@@ -352,7 +352,7 @@ ul.contact {
 	margin-top: 14px;
 }
 
-.publications .cv-year p {
+.publications .cv-year p.justify {
 	font-size: 1em;
 	line-height: 1.65;
 	padding-left: 1.4em;
@@ -360,7 +360,7 @@ ul.contact {
 	margin: 14px 0;
 }
 
-.publications .cv-year p::before {
+.publications .cv-year p.justify::before {
 	content: "• ";
 	color: var(--color-accent);
 	font-weight: 700;
